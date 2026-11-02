@@ -10,9 +10,11 @@ Site estático (HTML, CSS e JavaScript simples) da Cafetaria da Vila, Condeixa-a
 
 ## Editar no VS Code
 1. Abrir a pasta no VS Code.
-2. Instalar a extensão **Live Server** e clicar em "Go Live" para ver as alterações ao vivo.
-3. Horário: alterar `HORARIO` em `js/main.js` e a tabela em `index.html`.
-4. Aviso de remodelação: bloco `#aviso` no topo de `index.html` (mudar `data-ate` ou apagar o bloco).
+2. Executar `npm install` para instalar as ferramentas do projeto.
+3. Executar `npm run dev` e abrir o endereço indicado no terminal.
+4. Gerar uma versão de produção com `npm run build`; os ficheiros ficam em `dist/`. Para testar essa versão, executar `npm run preview`.
+5. Horário: alterar `HORARIO` em `js/main.js` e a tabela em `index.html`.
+6. Aviso de remodelação: bloco `#aviso` no topo de `index.html` (mudar `data-ate` ou apagar o bloco).
 
 ## Publicar (GitHub Pages)
-Settings > Pages > Source: `main` / root. O site fica em `https://<utilizador>.github.io/cafetaria-da-vila/`.
+Settings > Pages > Source: `main` / root para publicar os ficheiros estáticos da raiz. Se publicar a versão gerada por `npm run build`, configurar o GitHub Pages para publicar a pasta `dist/`.

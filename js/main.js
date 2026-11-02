@@ -1,31 +1,50 @@
-// Horário: dia da semana (0 = domingo) -> [abertura, fecho] em horas
-const HORARIO = {1:null, 2:[10,20], 3:[10,20], 4:[10,20], 5:[10,20], 6:[10,20], 0:null};
-const DIAS = ["domingo","segunda","terça","quarta","quinta","sexta","sábado"];
+// Dia da semana (0 = domingo) -> [abertura, fecho], em horas.
+const HORARIO = { 0: null, 1: null, 2: [10, 20], 3: [10, 20], 4: [10, 20], 5: [10, 20], 6: [10, 20] };
+const DIAS = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+const agora = new Date();
+const partes = new Intl.DateTimeFormat("pt-PT", {
+  timeZone: "Europe/Lisbon",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23"
+}).formatToParts(agora);
+const horaLocal = Number(partes.find(parte => parte.type === "hour").value);
+const minutoLocal = Number(partes.find(parte => parte.type === "minute").value);
+const dataLocal = [
+  partes.find(parte => parte.type === "year").value,
+  partes.find(parte => parte.type === "month").value,
+  partes.find(parte => parte.type === "day").value
+].join("-");
+const dia = new Date(`${dataLocal}T00:00:00Z`).getUTCDay();
+const horaDecimal = horaLocal + minutoLocal / 60;
 
-// Hora atual em Portugal, independentemente do fuso do visitante
-const agora = new Date(new Date().toLocaleString("en-US", {timeZone:"Europe/Lisbon"}));
-const dia = agora.getDay();
-const h = agora.getHours() + agora.getMinutes()/60;
+const linhaHoje = document.querySelector(`tr[data-dia="${dia}"]`);
+if (linhaHoje) linhaHoje.classList.add("hoje");
 
-// Destacar o dia de hoje na tabela
-document.querySelector(`tr[data-dia="${dia}"]`)?.classList.add("hoje");
-
-// Estado: aberto / fechado
 const estado = document.getElementById("estado");
-const hoje = HORARIO[dia];
-if (hoje && h >= hoje[0] && h < hoje[1]) {
-  estado.textContent = `Aberto agora até às ${hoje[1]}h00`;
-  estado.classList.add("aberto");
-} else {
-  let i = 1;
-  while (!HORARIO[(dia + i) % 7]) i++;
-  const prox = (dia + i) % 7;
-  const quando = (hoje && h < hoje[0]) ? "hoje" : (i === 1 ? "amanhã" : DIAS[prox]);
-  estado.textContent = `Fechado agora. Abre ${quando} às ${HORARIO[prox][0]}h00`;
+if (estado) {
+  const horarioHoje = HORARIO[dia];
+  if (horarioHoje && horaDecimal >= horarioHoje[0] && horaDecimal < horarioHoje[1]) {
+    estado.textContent = `Aberto agora. Fecha às ${horarioHoje[1]}h00.`;
+    estado.classList.add("aberto");
+  } else {
+    let diasAteAbrir = 1;
+    while (diasAteAbrir <= 7 && !HORARIO[(dia + diasAteAbrir) % 7]) diasAteAbrir++;
+    const proximoDia = (dia + diasAteAbrir) % 7;
+    const quando = horarioHoje && horaDecimal < horarioHoje[0]
+      ? "hoje"
+      : diasAteAbrir === 1
+        ? "amanhã"
+        : DIAS[proximoDia];
+    estado.textContent = `Fechado agora. Abre ${quando} às ${HORARIO[proximoDia][0]}h00.`;
+  }
 }
 
-// Aviso de remodelação: só aparece até à data indicada em data-ate
 const aviso = document.getElementById("aviso");
-if (aviso && agora <= new Date(aviso.dataset.ate + "T23:59:59")) aviso.hidden = false;
+if (aviso && aviso.dataset.ate && dataLocal <= aviso.dataset.ate) aviso.hidden = false;
 
-document.getElementById("ano").textContent = agora.getFullYear();
+const ano = document.getElementById("ano");
+if (ano) ano.textContent = String(agora.getFullYear());

@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cafetaria da Vila · Brunch e pastelaria em Condeixa-a-Nova</title>
-<meta name="description" content="Brunch, panquecas, croissants frescos, tostas, hambúrgueres e bolos por encomenda em Condeixa-a-Nova. Aberto de terça a sábado, das 10h às 20h.">
+<meta name="description" content="Brunch, panquecas, croissants, tostas e bolos por encomenda na Cafetaria da Vila, em Condeixa-a-Nova. De terça a sábado, das 10h às 20h.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,32 +24,35 @@
     <a href="#encomendas">Bolos</a>
     <a href="#visitar">Visitar</a>
   </nav>
+  <a class="topo-cta" href="tel:+351239134703">Ligar</a>
 </header>
 
 <main>
   <section class="hero" id="inicio">
     <div class="hero-texto">
+      <p class="sobretitulo">Cafetaria da Vila · Condeixa-a-Nova</p>
+      <h1>Brunch, café e coisas boas.</h1>
+      <p class="lead">Panquecas, brunch, croissants e bolos feitos na casa. Estamos em Condeixa, a poucos minutos de Coimbra.</p>
       <p class="estado" id="estado" aria-live="polite">Horário: terça a sábado, 10h–20h</p>
-      <h1>Brunch tardio, panquecas altas e bolos feitos à mão.</h1>
-      <p class="lead">Em Condeixa-a-Nova, a poucos minutos de Coimbra. Venha com tempo: as pessoas costumam ficar entre 45 minutos e uma hora e meia.</p>
       <div class="acoes">
-        <a class="btn btn-principal" href="tel:+351239134703">Reservar mesa: 239 134 703</a>
+        <a class="btn btn-principal" href="tel:+351239134703">Ligue-nos: 239 134 703</a>
         <a class="btn btn-sec" href="#ementa">Ver ementa</a>
       </div>
     </div>
-    <div class="pilha" role="img" aria-label="Ilustração de uma pilha de panquecas red velvet com creme">
-      <span class="creme-topo"></span>
-      <span class="p"></span><span class="c"></span>
-      <span class="p"></span><span class="c"></span>
-      <span class="p"></span><span class="c"></span>
-      <span class="p"></span>
-      <span class="prato"></span>
-    </div>
+    <figure class="hero-foto">
+      <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Panquecas fofas com fruta fresca e xarope" fetchpriority="high">
+      <figcaption>Panquecas · imagem ilustrativa</figcaption>
+    </figure>
   </section>
 
   <section class="ementa" id="ementa">
-    <h2>Ementa</h2>
-    <p class="nota">Pratos principais da casa. Os preços e as novidades do dia estão no balcão e no Instagram.</p>
+    <div class="sec-cabecalho">
+      <div>
+        <p class="sobretitulo">Da cozinha da casa</p>
+        <h2>O que pode encontrar</h2>
+      </div>
+      <p class="nota">Esta é uma seleção do que servimos. Os preços e as sugestões do dia estão no balcão e no Instagram.</p>
+    </div>
     <div class="grelha">
       <article>
         <h3>Panquecas</h3>
@@ -79,25 +82,34 @@
   </section>
 
   <section class="encomendas" id="encomendas">
-    <div>
-      <h2>Bolos por encomenda</h2>
-      <p>Aniversários, batizados ou uma sobremesa para a mesa de domingo. Diga-nos para quantas pessoas é, o sabor e a data, e tratamos do resto.</p>
+    <div class="encomendas-texto">
+      <p class="sobretitulo">Encomendas</p>
+      <h2>Bolos para momentos especiais</h2>
+      <p>Aniversários, batizados ou uma sobremesa para partilhar. Ligue-nos para combinar o sabor, o tamanho e a data.</p>
+      <a class="btn btn-principal" href="tel:+351239134703">Ligar para encomendar</a>
     </div>
-    <a class="btn btn-claro" href="tel:+351239134703">Ligar para encomendar</a>
   </section>
 
   <section class="visitar" id="visitar">
-    <h2>Visitar</h2>
+    <div class="sec-cabecalho">
+      <div>
+        <p class="sobretitulo">Estamos em Condeixa-a-Nova</p>
+        <h2>Visite-nos</h2>
+      </div>
+      <p class="nota">A poucos minutos de Coimbra. Consulte o horário ou ligue-nos antes de vir.</p>
+    </div>
     <div class="duas">
       <div>
+        <span class="prato-numero">ENCONTRE-NOS</span>
         <h3>Morada</h3>
         <address>Urbanização Nova de Conímbriga 2<br>3150-232 Condeixa-a-Nova</address>
-        <p><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd2259b12308e96d:0xbf8d74819674e2a" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+        <p><a class="texto-link" href="https://www.google.com/maps/search/?api=1&amp;query=Urbaniza%C3%A7%C3%A3o+Nova+de+Con%C3%ADmbriga+2%2C+3150-232+Condeixa-a-Nova" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
         <h3>Contactos</h3>
         <p><a href="tel:+351239134703">239 134 703</a><br>
         <a href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Instagram @cafetariadavila_</a></p>
       </div>
       <div>
+        <span class="prato-numero">TERÇA A SÁBADO</span>
         <h3>Horário</h3>
         <table class="horario">
           <tbody>
@@ -113,14 +125,14 @@
         <p class="nota">O horário pode mudar em feriados.</p>
       </div>
     </div>
-    <p class="opinioes">4,7 em 5 no Google, com 76 opiniões de clientes.</p>
   </section>
 </main>
 
 <footer>
   <p>© <span id="ano">2026</span> Cafetaria da Vila · Condeixa-a-Nova</p>
+  <a class="voltar-topo" href="#inicio">Voltar ao início ↑</a>
 </footer>
 
-<script src="js/main.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
