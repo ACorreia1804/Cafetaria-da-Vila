@@ -1,0 +1,68 @@
+/* Cores e tipos: altere aqui para mudar o site todo */
+:root{
+  --berry:#6B1526; --berry-2:#8E2338; --blush:#F7DDDD; --paper:#FFF7F4;
+  --ink:#2A1519; --pistache:#B7CDA0; --creme:#FFF1E6;
+  --serif:"Young Serif",Georgia,serif; --sans:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 1.0625rem/1.6 var(--sans);color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,5.5vw,4rem);max-width:16ch}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem)}
+h3{font-size:1.2rem}
+a{color:var(--berry)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--pistache);outline-offset:3px}
+section{padding:4.5rem min(6vw,4rem)}
+.nota{color:#5b4247;font-size:.95rem}
+
+.aviso{background:var(--pistache);color:var(--ink);text-align:center;padding:.6rem 1rem;font-weight:500}
+.topo{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem min(6vw,4rem);background:var(--berry)}
+.marca{font-family:var(--serif);font-size:1.25rem;color:var(--blush);text-decoration:none}
+.topo nav{display:flex;gap:1.25rem}
+.topo nav a{color:var(--blush);text-decoration:none;font-weight:500}
+.topo nav a:hover{text-decoration:underline}
+
+.hero{background:var(--berry);color:var(--blush);display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:2rem;padding-top:3rem}
+.estado{display:inline-block;background:var(--blush);color:var(--berry);padding:.25rem .8rem;border-radius:99px;font-weight:700;font-size:.9rem;margin:0 0 1.25rem}
+.estado.aberto{background:var(--pistache);color:var(--ink)}
+.lead{max-width:48ch;font-size:1.15rem}
+.acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.5rem;font-weight:700;text-decoration:none}
+.btn-principal{background:var(--blush);color:var(--berry)}
+.btn-sec{border:2px solid var(--blush);color:var(--blush)}
+.btn-claro{background:var(--berry);color:var(--blush);white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+
+/* Pilha de panquecas feita só com CSS */
+.pilha{display:flex;flex-direction:column;align-items:center;position:relative;padding-top:2.5rem}
+.pilha .p{width:15rem;height:2.6rem;background:var(--berry-2);border-radius:2rem;box-shadow:inset 0 -6px 0 rgba(0,0,0,.18)}
+.pilha .c{width:13.4rem;height:.7rem;background:var(--creme);border-radius:1rem;margin:-.2rem 0}
+.pilha .creme-topo{position:absolute;top:0;width:9rem;height:3rem;background:var(--creme);border-radius:50% 50% 45% 45%;z-index:2;box-shadow:0 .5rem 0 -.1rem var(--creme)}
+.pilha .prato{width:19rem;height:1rem;background:var(--blush);border-radius:50%;margin-top:.3rem}
+
+.grelha{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem 2.5rem;margin-top:2rem}
+.grelha article{border-top:3px solid var(--berry);padding-top:1rem}
+.grelha p{margin:0}
+
+.encomendas{background:var(--blush);display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center}
+.encomendas p{max-width:55ch;margin:0}
+
+.duas{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:3rem;margin-top:1.5rem}
+address{font-style:normal;margin-bottom:.5rem}
+.horario{border-collapse:collapse;width:100%;max-width:22rem}
+.horario th,.horario td{text-align:left;padding:.45rem 0;border-bottom:1px solid #e6cfcf;font-weight:400}
+.horario th{font-weight:500}
+.horario tr.hoje{font-weight:700;color:var(--berry)}
+.horario tr.hoje th{font-weight:700}
+.opinioes{margin-top:3rem;font-family:var(--serif);font-size:1.2rem}
+
+footer{background:var(--ink);color:var(--blush);padding:1.5rem min(6vw,4rem);font-size:.9rem}
+footer p{margin:0}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .pilha{order:-1;transform:scale(.8)}
+  .topo nav{gap:.9rem;font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
