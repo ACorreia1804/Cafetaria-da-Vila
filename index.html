@@ -5,20 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cafetaria da Vila · Brunch e pastelaria em Condeixa-a-Nova</title>
 <meta name="description" content="Brunch tardio, tostas e bolos feitos à mão na Cafetaria da Vila, em Condeixa-a-Nova. De terça a sábado, das 10h00 às 20h00.">
+<meta name="theme-color" content="#fbf8f2">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Cafetaria da Vila">
+<meta property="og:title" content="Cafetaria da Vila · Condeixa-a-Nova">
+<meta property="og:description" content="Brunch tardio, tostas e bolos feitos à mão em Condeixa-a-Nova.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Cafetaria da Vila",
+  "description": "Brunch, tostas e bolos feitos à mão em Condeixa-a-Nova.",
+  "telephone": "+351239134703",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Urbanização Nova de Conímbriga 2",
+    "postalCode": "3150-232",
+    "addressLocality": "Condeixa-a-Nova",
+    "addressCountry": "PT"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "10:00",
+    "closes": "20:00"
+  }],
+  "sameAs": ["https://www.instagram.com/cafetariadavila_/"]
+}
+</script>
 </head>
 <body>
 
+<a class="salto-conteudo" href="#conteudo">Saltar para o conteúdo</a>
 <!-- AVISO: editar o texto ou apagar este bloco quando já não for preciso -->
 <div class="aviso" id="aviso" data-ate="2026-11-02" hidden>
   Encerrada para remodelações até 2 de novembro. Reabre na terça, às 10h00.
 </div>
 
 <header class="topo">
-  <a class="marca" href="#inicio">Cafetaria da Vila</a>
+  <a class="marca" href="#inicio" aria-label="Cafetaria da Vila — início">
+    <img src="img/logo.jpg" alt="Cafetaria da Vila">
+  </a>
   <nav aria-label="Principal">
     <a href="#ementa">Ementa</a>
     <a href="#encomendas">Bolos</a>
@@ -28,7 +60,7 @@
   <a class="topo-cta" href="tel:+351239134703">Ligar</a>
 </header>
 
-<main>
+<main id="conteudo">
   <section class="hero" id="inicio">
     <div class="hero-texto">
       <p class="sobretitulo">Cafetaria da Vila · Condeixa-a-Nova</p>
@@ -41,12 +73,7 @@
       </div>
     </div>
     <figure class="hero-foto">
-      <div class="bolo-ilustracao" role="img" aria-label="Ilustração de uma fatia de bolo em camadas">
-        <span class="fatia-bolo"></span>
-        <span class="cobertura-bolo"></span>
-        <span class="morangos-bolo"></span>
-      </div>
-      <figcaption>Bolos feitos na casa</figcaption>
+      <img src="img/logo.jpg" alt="Logótipo da Cafetaria da Vila">
     </figure>
   </section>
 
@@ -83,14 +110,14 @@
     <div class="avaliacoes-conteudo">
       <h2>Avaliações de Cafetaria da Vila</h2>
       <div class="plataformas-avaliacoes">
-        <a class="avaliacao-plataforma" href="https://www.google.com/maps/search/?api=1&amp;query=Cafetaria+da+Vila+Condeixa-a-Nova" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Google">
+        <a class="avaliacao-plataforma" href="https://pt.restaurantguru.com/Cafetaria-da-Vila-Condeixa-a-Nova-Condeixa-a-Nova/reviews/google" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Google">
           <span class="marca-plataforma google" aria-hidden="true">G</span>
           <span class="nome-plataforma">Google</span>
           <span class="estrelas-plataforma" aria-label="4,7 em 5 estrelas">★★★★★</span>
           <span class="nota-plataforma">(4,7/5)</span>
-          <span class="total-plataforma">74</span>
+          <span class="total-plataforma">776</span>
         </a>
-        <a class="avaliacao-plataforma" href="https://www.facebook.com/search/pages/?q=Cafetaria%20da%20Vila%20Condeixa-a-Nova" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Facebook">
+        <a class="avaliacao-plataforma" href="https://pt.restaurantguru.com/Cafetaria-da-Vila-Condeixa-a-Nova-Condeixa-a-Nova/reviews/facebook" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Facebook">
           <span class="marca-plataforma facebook" aria-hidden="true">f</span>
           <span class="nome-plataforma">Facebook</span>
           <span class="estrelas-plataforma" aria-label="4,8 em 5 estrelas">★★★★★</span>
@@ -99,23 +126,24 @@
         </a>
       </div>
       <div class="opiniao-cabecalho">
-        <h3>Opiniões de visitantes sobre Cafetaria da Vila <span>/ 116</span></h3>
-        <a class="btn btn-principal" href="https://pt.restaurantguru.com/Cafetaria-da-Vila-Condeixa-a-Nova-Condeixa-a-Nova" target="_blank" rel="noopener">Ver opiniões</a>
+        <h3>Opiniões de visitantes sobre Cafetaria da Vila</h3>
+        <a class="btn btn-principal" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Ver todas no Google</a>
       </div>
       <div class="lista-opinioes">
         <article class="opiniao">
-          <span class="estrelas-opiniao" aria-label="4 em 5 estrelas">★★★★<span>★</span></span>
-          <p>Espaço acolhedor perto de Conímbriga, elogiado como uma boa paragem para uma pausa.</p>
-          <span class="origem-opiniao">Síntese de uma opinião no Google</span>
+          <p>Visitantes elogiam o espaço acolhedor, a decoração, a variedade de comida e o atendimento simpático. Alguns destacam em particular as panquecas, os croissants e a limonada.</p>
+          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de opiniões públicas do Google</a>
         </article>
         <article class="opiniao">
-          <span class="estrelas-opiniao" aria-label="5 em 5 estrelas">★★★★★</span>
-          <p>Uma opinião destaca o atendimento e as refeições.</p>
-          <span class="origem-opiniao">Síntese de uma opinião no Google</span>
+          <p>Uma cliente refere que regressou várias vezes e aprecia a comida, mas descreve uma experiência negativa com o atendimento de uma funcionária, distinguindo-a dos restantes funcionários.</p>
+          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de uma opinião pública do Google</a>
+        </article>
+        <article class="opiniao">
+          <p>Há também críticas sobre o tempo de espera — uma pessoa diz ter esperado cerca de 20 minutos sem ser atendida — e sobre o ar condicionado estar demasiado frio.</p>
+          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de opiniões públicas do Google</a>
         </article>
       </div>
-      <p class="nota nota-avaliacoes">No Restaurant Guru: n.º 1 de 16 cafés em Condeixa-a-Nova, com 146 votos.</p>
-      <!-- TODO: confirmar com o café os números das avaliações, que diferem entre os dados fornecidos e a imagem de referência. -->
+      <p class="nota nota-avaliacoes">Os comentários são resumos das opiniões do Google que partilhaste e podem não refletir todas as avaliações atuais. As classificações do Facebook são apresentadas separadamente; consulta as próprias plataformas para ver os comentários completos e atualizados.</p>
     </div>
   </section>
 
