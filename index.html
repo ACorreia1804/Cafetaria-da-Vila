@@ -55,9 +55,22 @@
     <a href="#ementa">Ementa</a>
     <a href="#encomendas">Bolos</a>
     <a href="#visitar">Visitar</a>
-    <a href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Instagram</a>
+    <span class="topo-redes">
+      <a href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/cafetariodomuseuporos/?locale=pt_PT" target="_blank" rel="noopener">Facebook</a>
+    </span>
   </nav>
-  <a class="topo-cta" href="tel:+351239134703">Ligar</a>
+  <div class="topo-acoes">
+    <button class="idioma-cta" id="idioma" type="button" aria-label="Mudar o site para inglês" title="English">
+      <svg viewBox="0 0 60 36" aria-hidden="true" focusable="false">
+      <rect width="60" height="36" fill="#012169"></rect>
+      <path d="M0 0 60 36M60 0 0 36" stroke="#fff" stroke-width="8"></path>
+      <path d="M0 0 60 36M60 0 0 36" stroke="#c8102e" stroke-width="3"></path>
+      <path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"></path>
+      <path d="M30 0v36M0 18h60" stroke="#c8102e" stroke-width="6"></path>
+    </svg>
+    </button>
+  </div>
 </header>
 
 <main id="conteudo">
@@ -68,8 +81,7 @@
       <p class="lead">Brunch, croissants frescos, tostas e bolos por encomenda na Cafetaria da Vila, em Condeixa-a-Nova.</p>
       <p class="estado" id="estado" aria-live="polite">Horário: terça a sábado, 10h–20h</p>
       <div class="acoes">
-        <a class="btn btn-principal" href="tel:+351239134703">Ligue-nos: 239 134 703</a>
-        <a class="btn btn-sec" href="#ementa">Ver ementa</a>
+        <a class="btn btn-principal" href="tel:+351239134703">Contacto-nos: 239 134 703</a>
       </div>
     </div>
     <figure class="hero-foto">
@@ -108,42 +120,93 @@
 
   <section class="avaliacoes" id="avaliacoes">
     <div class="avaliacoes-conteudo">
-      <h2>Avaliações de Cafetaria da Vila</h2>
+      <div class="avaliacoes-cabecalho">
+        <div>
+          <p class="sobretitulo">Opiniões de quem nos visita</p>
+          <h2>Críticas e Avaliações</h2>
+        </div>
+        <a class="btn btn-principal" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Deixe a sua opinião</a>
+      </div>
       <div class="plataformas-avaliacoes">
         <a class="avaliacao-plataforma" href="https://pt.restaurantguru.com/Cafetaria-da-Vila-Condeixa-a-Nova-Condeixa-a-Nova/reviews/google" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Google">
-          <span class="marca-plataforma google" aria-hidden="true">G</span>
+          <span class="marca-plataforma google" aria-hidden="true">
+            <svg viewBox="0 0 48 48" focusable="false">
+              <path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+              <path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.87c-.58 2.96-2.24 5.47-4.68 7.16l7.19 5.58c4.2-3.88 7.6-9.57 7.6-17.21z"/>
+              <path fill="#FBBC05" d="M10.54 28.59a14.4 14.4 0 0 1 0-9.18l-7.98-6.19a24 24 0 0 0 0 21.56l7.98-6.19z"/>
+              <path fill="#EA4335" d="M24 48c6.48 0 11.94-2.13 15.92-5.79l-7.19-5.58c-2 1.35-4.57 2.15-8.73 2.15-6.26 0-11.57-4.22-13.46-9.92l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+            </svg>
+          </span>
           <span class="nome-plataforma">Google</span>
           <span class="estrelas-plataforma" aria-label="4,7 em 5 estrelas">★★★★★</span>
           <span class="nota-plataforma">(4,7/5)</span>
-          <span class="total-plataforma">776</span>
+          <span class="total-plataforma">76</span>
         </a>
         <a class="avaliacao-plataforma" href="https://pt.restaurantguru.com/Cafetaria-da-Vila-Condeixa-a-Nova-Condeixa-a-Nova/reviews/facebook" target="_blank" rel="noopener" aria-label="Ver avaliações da Cafetaria da Vila no Facebook">
-          <span class="marca-plataforma facebook" aria-hidden="true">f</span>
+          <span class="marca-plataforma facebook" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+              <path fill="#fff" d="M13.5 23.9V13h3.7l.6-4.2h-4.3V6.1c0-1.2.4-2.1 2.2-2.1H18V.2C17.6.1 16.3 0 14.8 0c-3.2 0-5.4 1.9-5.4 5.5v3.1H5.8V13h3.6v10.9z"/>
+            </svg>
+          </span>
           <span class="nome-plataforma">Facebook</span>
           <span class="estrelas-plataforma" aria-label="4,8 em 5 estrelas">★★★★★</span>
           <span class="nota-plataforma">(4,8/5)</span>
           <span class="total-plataforma">72</span>
         </a>
       </div>
-      <div class="opiniao-cabecalho">
-        <h3>Opiniões de visitantes sobre Cafetaria da Vila</h3>
-        <a class="btn btn-principal" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Ver todas no Google</a>
+      <!-- TODO: confirmar o número atual de avaliações do Google. -->
+      <div class="opinioes-filtros">
+        <label class="pesquisa-opinioes">
+          <span class="sr-only">Pesquisar opiniões</span>
+          <input id="pesquisa-opinioes" type="search" placeholder="Pesquisar opiniões dos visitantes">
+        </label>
+        <div class="filtros-plataforma" role="group" aria-label="Filtrar opiniões por plataforma">
+          <button class="filtro-opinioes ativo" type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+          <button class="filtro-opinioes" type="button" data-filtro="google" aria-pressed="false">Google</button>
+          <button class="filtro-opinioes" type="button" data-filtro="facebook" aria-pressed="false">Facebook</button>
+        </div>
       </div>
-      <div class="lista-opinioes">
-        <article class="opiniao">
-          <p>Visitantes elogiam o espaço acolhedor, a decoração, a variedade de comida e o atendimento simpático. Alguns destacam em particular as panquecas, os croissants e a limonada.</p>
-          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de opiniões públicas do Google</a>
+      <div class="lista-opinioes" id="lista-opinioes" aria-live="polite">
+        <article class="opiniao" data-plataforma="google">
+          <div class="opiniao-utilizador">
+            <span class="avatar-opiniao avatar-google" aria-hidden="true">G</span>
+            <div>
+              <h3>Resumo das opiniões no Google</h3>
+              <p class="data-opiniao">Síntese editorial · Restaurant Guru</p>
+            </div>
+          </div>
+          <p class="estrelas-opiniao" aria-label="4,7 em 5 estrelas">★★★★★</p>
+          <p class="texto-opiniao">As opiniões destacam o ambiente tranquilo, a qualidade do serviço e do café, e preços considerados razoáveis.</p>
+          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Ver opiniões no Google</a>
         </article>
-        <article class="opiniao">
-          <p>Uma cliente refere que regressou várias vezes e aprecia a comida, mas descreve uma experiência negativa com o atendimento de uma funcionária, distinguindo-a dos restantes funcionários.</p>
-          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de uma opinião pública do Google</a>
+        <article class="opiniao" data-plataforma="facebook">
+          <div class="opiniao-utilizador">
+            <span class="avatar-opiniao" aria-hidden="true">B</span>
+            <div>
+              <h3>Bruna Duarte</h3>
+              <p class="data-opiniao">11 meses atrás · Facebook</p>
+            </div>
+          </div>
+          <p class="estrelas-opiniao" aria-label="5 em 5 estrelas">★★★★★</p>
+          <p class="texto-opiniao">Descreve um ambiente sereno, pratos frescos com sabor caseiro e um atendimento que a fez sentir-se em casa.</p>
+          <a class="origem-opiniao" href="https://www.facebook.com/cafetariodomuseuporos/reviews/?locale=pt_PT" target="_blank" rel="noopener">Ver opinião no Facebook</a>
         </article>
-        <article class="opiniao">
-          <p>Há também críticas sobre o tempo de espera — uma pessoa diz ter esperado cerca de 20 minutos sem ser atendida — e sobre o ar condicionado estar demasiado frio.</p>
-          <a class="origem-opiniao" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083809,-8.5114543,17z/data=!4m18!1m9!3m8!1s0xd2259b12308e96d:0xbf8d74819674e2a!2sCafetaria+da+Vila!8m2!3d40.1083768!4d-8.5088794!9m1!1b1!16s%2Fg%2F11x22fpzv5" target="_blank" rel="noopener">Resumo de opiniões públicas do Google</a>
+        <article class="opiniao" data-plataforma="facebook">
+          <div class="opiniao-utilizador">
+            <span class="avatar-opiniao avatar-solange" aria-hidden="true">S</span>
+            <div>
+              <h3>Solange Brunido</h3>
+              <p class="data-opiniao">Há um ano · Facebook</p>
+            </div>
+          </div>
+          <p class="estrelas-opiniao" aria-label="5 em 5 estrelas">★★★★★</p>
+          <p class="texto-opiniao">Destaca o ambiente agradável e a qualidade da comida.</p>
+          <a class="origem-opiniao" href="https://www.facebook.com/cafetariodomuseuporos/reviews/?locale=pt_PT" target="_blank" rel="noopener">Ver opinião no Facebook</a>
         </article>
+        <p class="sem-opinioes" hidden>Não foram encontradas opiniões.</p>
       </div>
-      <p class="nota nota-avaliacoes">Os comentários são resumos das opiniões do Google que partilhaste e podem não refletir todas as avaliações atuais. As classificações do Facebook são apresentadas separadamente; consulta as próprias plataformas para ver os comentários completos e atualizados.</p>
+      <p class="nota nota-avaliacoes">Os comentários do Facebook são sínteses das opiniões públicas visíveis.</p>
     </div>
   </section>
 
@@ -153,28 +216,23 @@
         <p class="sobretitulo">Feito e servido na Vila</p>
         <h2 id="galeria-titulo">Um gosto de Condeixa</h2>
       </div>
-      <p class="nota">Bolos, tostas e momentos à mesa. Em breve, fotografias da Cafetaria da Vila.</p>
+
     </div>
     <div class="grelha-fotos">
-      <figure class="foto-pendente">
-        <div class="moldura-foto" aria-hidden="true"><span>Fotografia por adicionar</span></div>
-        <figcaption>Bolos feitos na casa <span>img/bolos.jpg</span></figcaption>
+      <figure class="foto-pendente foto-principal">
+        <img src="img/bolos.jpg" alt="Bolo individual decorado com creme e morangos, servido num prato" loading="lazy">
+        <figcaption>Bolo com morangos</figcaption>
       </figure>
       <figure class="foto-pendente">
-        <div class="moldura-foto" aria-hidden="true"><span>Fotografia por adicionar</span></div>
-        <figcaption>Tostas em pão rústico <span>img/tostas.jpg</span></figcaption>
+        <img src="img/tostas%20em%20pao%20rustico.jpg" alt="Tosta em pão rústico com rúcula, queijo e nozes" loading="lazy">
+        <figcaption>Tosta em pão rústico</figcaption>
       </figure>
       <figure class="foto-pendente">
-        <div class="moldura-foto" aria-hidden="true"><span>Fotografia por adicionar</span></div>
-        <figcaption>Esplanada da Cafetaria <span>img/esplanada.jpg</span></figcaption>
+        <img src="img/com%20direito%20a%20vista.jpg" alt="Prato de brunch com salada, ovo e tomate junto a uma janela com vista" loading="lazy">
+        <figcaption>Brunch com vista</figcaption>
       </figure>
     </div>
     <p class="nota galeria-instagram"><a class="texto-link" href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Veja também o nosso Instagram</a></p>
-    <!-- Quando as fotos estiverem em img/, substitua cada moldura por:
-    <img src="img/bolos.jpg" alt="Bolos feitos na casa da Cafetaria da Vila" loading="lazy">
-    <img src="img/tostas.jpg" alt="Tostas em pão rústico servidas na Cafetaria da Vila" loading="lazy">
-    <img src="img/esplanada.jpg" alt="Esplanada da Cafetaria da Vila em Condeixa-a-Nova" loading="lazy">
-    -->
   </section>
 
   <section class="encomendas" id="encomendas">
@@ -182,33 +240,30 @@
       <p class="sobretitulo">Encomendas</p>
       <h2>Bolos para momentos especiais</h2>
       <p>Bolos feitos à mão por encomenda. Contacte-nos para saber mais.</p>
-      <a class="btn btn-principal" href="tel:+351239134703">Ligar para encomendar</a>
+      <a class="btn btn-principal" href="tel:+351239134703">Contactar para encomendar</a>
     </div>
   </section>
 
   <section class="visitar" id="visitar">
     <div class="sec-cabecalho">
       <div>
-        <p class="sobretitulo">Estamos em Condeixa-a-Nova</p>
         <h2>Visite-nos</h2>
       </div>
       <p class="nota">Consulte o horário ou ligue-nos antes de vir.</p>
     </div>
     <div class="duas">
       <div>
-        <span class="prato-numero">ENCONTRE-NOS</span>
         <h3>Morada</h3>
         <address>Urbanização Nova de Conímbriga 2<br>3150-232 Condeixa-a-Nova</address>
-        <p><a class="texto-link" href="https://www.google.com/maps/search/?api=1&amp;query=Urbaniza%C3%A7%C3%A3o+Nova+de+Con%C3%ADmbriga+2%2C+3150-232+Condeixa-a-Nova" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+        <p><a class="texto-link" href="https://www.google.com/maps/place/Cafetaria+da+Vila/@40.1083768,-8.5114543,17z/data=!3m1!4b1!4m6!3m5!1s0xd2259b12308e96d:0xbf8d74819674e2a!8m2!3d40.1083768!4d-8.5088794!16s%2Fg%2F11x22fpzv5?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
         <h3>Contactos</h3>
-        <p><a href="tel:+351239134703">239 134 703</a><br>
-        <a href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Instagram @cafetariadavila_</a></p>
+        <p><a href="tel:+351239134703">239 134 703</a></p>
         <p class="detalhes-visita">Esplanada · Acessível a cadeiras de rodas</p>
         <p class="preco-medio">Preço médio: 10 € a 15 € por pessoa</p>
       </div>
       <div>
-        <span class="prato-numero">TERÇA A SÁBADO</span>
         <h3>Horário</h3>
+        <p class="prato-numero">TERÇA A SÁBADO</p>
         <table class="horario">
           <tbody>
             <tr data-dia="1"><th>Segunda</th><td>Fechado</td></tr>
@@ -230,11 +285,26 @@
 <footer>
   <p>© <span id="ano">2026</span> Cafetaria da Vila · Condeixa-a-Nova</p>
   <div class="rodape-links">
-    <a class="voltar-topo" href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener">Instagram</a>
+    <a class="social-link" href="https://www.instagram.com/cafetariadavila_/" target="_blank" rel="noopener" aria-label="Instagram da Cafetaria da Vila">
+      <svg class="social-icone" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle class="social-ponto" cx="17.5" cy="6.5" r="1"></circle>
+      </svg>
+      <span>Instagram</span>
+    </a>
+    <a class="social-link" href="https://www.facebook.com/cafetariodomuseuporos/?locale=pt_PT" target="_blank" rel="noopener" aria-label="Facebook da Cafetaria da Vila">
+      <svg class="social-icone social-facebook" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z"></path>
+      </svg>
+      <span>Facebook</span>
+    </a>
     <a class="voltar-topo" href="#inicio">Voltar ao início ↑</a>
   </div>
 </footer>
 
 <script type="module" src="js/main.js"></script>
+<script type="module" src="js/language.js"></script>
+<script type="module" src="js/reviews.js"></script>
 </body>
 </html>

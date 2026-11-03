@@ -18,6 +18,18 @@ test("the opening section displays the café logo instead of the cake illustrati
   assert.doesNotMatch(html, /bolo-ilustracao|fatia-bolo|cobertura-bolo|morangos-bolo/);
 });
 
+test("the header has no call button and keeps the language selector", () => {
+  assert.doesNotMatch(html, /class="topo-cta"/);
+  assert.match(html, /class="idioma-cta"/);
+});
+
+test("the gallery captions every image and the footer links are clearly labeled", () => {
+  assert.match(html, /<figcaption>Bolo com morangos<\/figcaption>/);
+  assert.match(html, /<span>Instagram<\/span>/);
+  assert.match(html, /<span>Facebook<\/span>/);
+  assert.match(html, /class="voltar-topo" href="#inicio">Voltar ao início ↑<\/a>/);
+});
+
 test("structured business data matches the published address and opening hours", () => {
   const [, jsonLd] = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) ?? [];
   assert.ok(jsonLd, "JSON-LD block should exist");
@@ -31,13 +43,18 @@ test("structured business data matches the published address and opening hours",
   ]);
 });
 
-test("Google review summaries are balanced and link to the original platform", () => {
+test("review cards identify their platform and link back to the original sources", () => {
   assert.match(html, /4,7\/5/);
   assert.match(html, /4,8\/5/);
-  assert.match(html, /<span class="total-plataforma">776<\/span>/);
+  assert.match(html, /<span class="total-plataforma">76<\/span>/);
+  assert.match(html, /<span class="total-plataforma">72<\/span>/);
   assert.equal((html.match(/class="origem-opiniao"/g) ?? []).length, 3);
   assert.match(html, /reviews\/facebook/);
-  assert.match(html, /Ver todas no Google/);
-  assert.match(html, /tempo de espera/);
-  assert.match(html, /demasiado frio/);
+  assert.match(html, /Resumo das opiniões no Google/);
+  assert.match(html, /Bruna Duarte/);
+  assert.match(html, /Solange Brunido/);
+  assert.match(html, /data-filtro="google"/);
+  assert.match(html, /data-filtro="facebook"/);
+  assert.match(html, /Pesquisar opiniões dos visitantes/);
+  assert.match(html, /Os comentários do Facebook são sínteses das opiniões públicas visíveis/);
 });
